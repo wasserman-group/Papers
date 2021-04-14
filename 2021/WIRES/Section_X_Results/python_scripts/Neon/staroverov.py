@@ -76,6 +76,7 @@ for i in list_basis:
         staroverov_results["occ_eigs"].append( ine.eigvecs_a[:wfn.nalpha()].tolist() )
         staroverov_results["density_difference"].append( dd )
         staroverov_results["vxc"].append( vxc.tolist() )
+        staroverov_results["grid"].append( x_plot.tolist() )
 
     except Exception as exception: 
         print(exception)
